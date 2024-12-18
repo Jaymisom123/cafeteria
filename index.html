@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Café</title>
+    </head>
+    <body>
+        <div class="caixa-video">
+            <video
+                src="videos/coffe.mp4"
+                loop
+                muted
+                autoplay
+            ></video>
+            <div class="mascara"></div>
+        </div>
+        <header class="header">
+            <section>
+                <a href="#">
+                    <img src="img/logo.png" alt="logo-cafeteria">
+                </a>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Sobre</a>
+                    <a href="#" onclick="mostrarModal()">Endereço</a>
+                    <a href="#">Contato</a>
+                </nav>
+            </section>
+        </header>
+        <section class="caixa-principal">
+            <div>
+                <h3>code com o Melhor café da Região</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam ea recusandae, sequi facilis aut dolore eum temporibus doloribus amet sint, rem deleniti laboriosam necessitatibus dignissimos cumque placeat sed corrupti officiis!</p>
+                <a class="botão-link">pague o seu Agora</a>
+            </div>
+        </section>
+        <section class="caixa-sobre" >
+            <h2 class="titulo">
+                <span> Sobre</span> Nós
+            </h2>
+            <div class="sobre-container">
+                <div class="sobre-imagem">
+                    <img src="img/about-img.jpeg" alt="">
+                </div>
+                <div class="sobre-textos">
+                    <h3>Oque faz nosso café especial</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed hic magnam modi labore dignissimos quasi vel esse ducimus maiores! Facilis vel, iste cumque sequi quaerat recusandae omnis vitae eaque fuga!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nobis iusto, velit laborum possimus fuga nihil quae ab, distinctio sit suscipit ducimus, iste libero tempora ratione. Rem tempora excepturi odio!</p>
+                    <a class="botão-link">Saiba Mais</a>
+                </div>
+            </div>
+        </section>
+        <div class="modal">
+         <h3 class="titulo"> <span>nosso </span>Endereço</h3>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7955.640407095829!2d-49.126083622290004!3d-4.444536799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92c1196d3965e2b1%3A0x9b871a4b386f99ad!2zQ2Fmw6kgJiBQcm9zYSAtIEphY3VuZMOh!5e0!3m2!1spt-BR!2sbr!4v1731524941831!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="mascara-modal" onclick="esconderModal()"></div>
+        <script src="./scripts.js"></script>
+    </body>
+</html>
