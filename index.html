@@ -1,65 +1,285 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <title>Café</title>
-    </head>
-    <body>
-        <div class="caixa-video">
-            <video
-                src="videos/coffe.mp4"
-                loop
-                muted
-                autoplay
-            ></video>
-            <div class="mascara"></div>
-        </div>
-        <header class="header">
-            <section>
-                <a href="#">
-                    <img src="img/logo.png" alt="logo-cafeteria">
-                </a>
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Sobre</a>
-                    <a href="#" onclick="mostrarModal()">Endereço</a>
-                    <a href="#">Contato</a>
-                </nav>
-            </section>
-        </header>
-        <section class="caixa-principal">
-            <div>
-                <h3>code com o Melhor café da Região</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam ea recusandae, sequi facilis aut dolore eum temporibus doloribus amet sint, rem deleniti laboriosam necessitatibus dignissimos cumque placeat sed corrupti officiis!</p>
-                <a class="botão-link">pague o seu Agora</a>
-            </div>
-        </section>
-        <section class="caixa-sobre" >
-            <h2 class="titulo">
-                <span> Sobre</span> Nós
-            </h2>
-            <div class="sobre-container">
-                <div class="sobre-imagem">
-                    <img src="img/about-img.jpeg" alt="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Café Premium - A Melhor Experiência em Café</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Café Premium Logo">
+                    <span>Café Premium</span>
                 </div>
-                <div class="sobre-textos">
-                    <h3>Oque faz nosso café especial</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed hic magnam modi labore dignissimos quasi vel esse ducimus maiores! Facilis vel, iste cumque sequi quaerat recusandae omnis vitae eaque fuga!</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nobis iusto, velit laborum possimus fuga nihil quae ab, distinctio sit suscipit ducimus, iste libero tempora ratione. Rem tempora excepturi odio!</p>
-                    <a class="botão-link">Saiba Mais</a>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#menu" class="nav-link">Cardápio</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
-        </section>
-        <div class="modal">
-         <h3 class="titulo"> <span>nosso </span>Endereço</h3>
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7955.640407095829!2d-49.126083622290004!3d-4.444536799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92c1196d3965e2b1%3A0x9b871a4b386f99ad!2zQ2Fmw6kgJiBQcm9zYSAtIEphY3VuZMOh!5e0!3m2!1spt-BR!2sbr!4v1731524941831!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="videos/Vídeo_de_Café_Expresso_Premium.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
         </div>
-        <div class="mascara-modal" onclick="esconderModal()"></div>
-        <script src="./scripts.js"></script>
-    </body>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Experiência Única em <span>Café Premium</span></h1>
+                <p>Desfrute dos melhores grãos selecionados do mundo, preparados com maestria por nossos baristas especializados</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Ver Cardápio</a>
+                    <a href="#sobre" class="btn btn-outline">Nossa História</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossa <span>Paixão</span></h2>
+                <p>Conheça a história por trás do melhor café da região</p>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-image">
+                    <img src="img/about-img.jpeg" alt="Sobre nossa cafeteria">
+                    <div class="image-overlay">
+                        <div class="play-button" onclick="openModal()">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ver Localização</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-text">
+                    <h3>O que torna nosso café especial</h3>
+                    <p>Há mais de 15 anos, nossa paixão pelo café nos levou a criar um espaço único onde cada xícara conta uma história. Selecionamos cuidadosamente os melhores grãos de fazendas sustentáveis ao redor do mundo.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-seedling"></i>
+                            <div>
+                                <h4>Grãos Sustentáveis</h4>
+                                <p>Parceria direta com produtores comprometidos com o meio ambiente</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-fire"></i>
+                            <div>
+                                <h4>Torra Artesanal</h4>
+                                <p>Processo cuidadoso que realça os sabores únicos de cada origem</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Baristas Certificados</h4>
+                                <p>Equipe especializada em métodos de extração premium</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section id="menu" class="menu-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos <span>Especiais</span></h2>
+                <p>Uma seleção dos nossos cafés mais apreciados</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Espresso Premium</h3>
+                    <p>Blend exclusivo com notas de chocolate e caramelo</p>
+                    <span class="price">R$ 8,50</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon">
+                        <i class="fas fa-mug-hot"></i>
+                    </div>
+                    <h3>Cappuccino Artesanal</h3>
+                    <p>Espresso duplo com espuma de leite vaporizado</p>
+                    <span class="price">R$ 12,00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon">
+                        <i class="fas fa-glass-whiskey"></i>
+                    </div>
+                    <h3>Cold Brew Especial</h3>
+                    <p>Extração a frio por 18 horas, servido gelado</p>
+                    <span class="price">R$ 14,50</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <h3>Café & Doces</h3>
+                    <p>Harmonização perfeita com nossos doces artesanais</p>
+                    <span class="price">R$ 18,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Anos de Experiência</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50000">0</div>
+                    <div class="stat-label">Xícaras Servidas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Origens Diferentes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">% Satisfação</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visite <span>Nossa Casa</span></h2>
+                <p>Encontre-nos e desfrute de uma experiência única</p>
+            </div>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua do Café Premium, 123<br>Jacundá - PA</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda a Sexta: 7h às 22h<br>Sábado e Domingo: 8h às 23h</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Contato</h4>
+                            <p>(94) 99151-8569<br>contato@cafepremium.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/5594991518569?text=Olá! Gostaria de saber mais sobre o Café Premium." target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contato-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="Café Premium">
+                    <p>A melhor experiência em café premium da região</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#menu">Cardápio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (94) 99151-8569</p>
+                    <p><i class="fas fa-envelope"></i> contato@cafepremium.com</p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5594991518569?text=Olá! Gostaria de saber mais sobre o Café Premium." target="_blank" style="color: #6c757d; text-decoration: none;">WhatsApp</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Café Premium. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="locationModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Nossa Localização</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7955.640407095829!2d-49.126083622290004!3d-4.444536799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92c1196d3965e2b1%3A0x9b871a4b386f99ad!2zQ2Fmw6kgJiBQcm9zYSAtIEphY3VuZMOh!5e0!3m2!1spt-BR!2sbr!4v1731524941831!5m2!1spt-BR!2sbr" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/5594991518569?text=Olá! Gostaria de saber mais sobre o Café Premium." target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
 </html>
